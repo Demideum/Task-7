@@ -1,0 +1,24 @@
+namespace IJunior_Task7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int myGold = 0;
+            int orderCrystal = 0;
+            int pricePerCrystal = 2;
+         
+            Console.WriteLine("Введите начальное количество золота");
+            myGold = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Сегодня распродажа! По " + pricePerCrystal + " золотого за кристалл. Сколько вы хотите купить?");
+            orderCrystal = int.Parse(Console.ReadLine());
+            
+            int myCrystal = orderCrystal * pricePerCrystal;
+            int residualMyGold = myGold - myCrystal * pricePerCrystal;
+            Console.WriteLine("Теперь у меня есть " + myCrystal + " кристаллов и осталось " + residualMyGold + " золота!");
+
+            Console.ReadKey();
+        }
+    }
+}
