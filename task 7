@@ -14,9 +14,9 @@ namespace IJunior_Task7
             Console.WriteLine("Сегодня распродажа! По " + pricePerCrystal + " золотого за кристалл. Сколько вы хотите купить?");
             orderCrystals = int.Parse(Console.ReadLine());
 
-            int playerCrystal = orderCrystals * pricePerCrystal;
-            playerGold -= playerCrystal * pricePerCrystal;
-            Console.WriteLine("Теперь у меня есть " + playerCrystal + " кристаллов и осталось " + playerGold + " золота!");
+            int playerCrystals = orderCrystals * pricePerCrystal;
+            playerGold -= playerCrystals * pricePerCrystal;
+            Console.WriteLine("Теперь у меня есть " + playerCrystals + " кристаллов и осталось " + playerGold + " золота!");
 
             Console.ReadKey();
         }
