@@ -4,19 +4,19 @@ namespace IJunior_Task7
     {
         static void Main(string[] args)
         {
-            int myGold = 0;
-            int orderCrystal = 0;
+            int playerGold = 0;
+            int orderCrystals = 0;
             int pricePerCrystal = 2;
-         
+
             Console.WriteLine("Введите начальное количество золота");
-            myGold = int.Parse(Console.ReadLine());
+            playerGold = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Сегодня распродажа! По " + pricePerCrystal + " золотого за кристалл. Сколько вы хотите купить?");
-            orderCrystal = int.Parse(Console.ReadLine());
-            
-            int myCrystal = orderCrystal * pricePerCrystal;
-            myGold -= myCrystal * pricePerCrystal;
-            Console.WriteLine("Теперь у меня есть " + myCrystal + " кристаллов и осталось " + myGold + " золота!");
+            orderCrystals = int.Parse(Console.ReadLine());
+
+            int playerCrystal = orderCrystals * pricePerCrystal;
+            playerGold -= playerCrystal * pricePerCrystal;
+            Console.WriteLine("Теперь у меня есть " + playerCrystal + " кристаллов и осталось " + playerGold + " золота!");
 
             Console.ReadKey();
         }
