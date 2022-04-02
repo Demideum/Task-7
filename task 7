@@ -15,7 +15,7 @@ namespace IJunior_Task7
             orderCrystal = int.Parse(Console.ReadLine());
             
             int myCrystal = orderCrystal * pricePerCrystal;
-            myGold = myGold - myCrystal * pricePerCrystal;
+            myGold -= myCrystal * pricePerCrystal;
             Console.WriteLine("Теперь у меня есть " + myCrystal + " кристаллов и осталось " + myGold + " золота!");
 
             Console.ReadKey();
